@@ -3,7 +3,7 @@ p { font-size: 12px; }
 #slide { position: relative; top: -21px; left: 350px; display: none; }
 #space { padding-bottom: 50px; }
 #smallSpace { padding-bottom: 25px; }
-.gray { background-color: #E6E6E6; width: 850px; padding-left: 20px; }
+.gray { background-color: #E6E6E6; width: 850px; height: 690px; }
 .text { font-size: 11px; text-align: left; }
 .ring { stroke: black; stroke-width: 0.75; }
 .polyline { stroke: white; stroke-width: 0.75; fill: none; }
