@@ -8,7 +8,14 @@ p { font-size: 12px; }
 .ring { stroke: black; stroke-width: 0.75; }
 .polyline { stroke: white; stroke-width: 0.75; fill: none; }
 .ring:hover, .hot:hover { stroke: white; }
-#title { color: white; }
+
+#title {
+    color: white;
+    padding-left: 20px;
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+
 body { background-color: black; }
 
 #tooltip {
