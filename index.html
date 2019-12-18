@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>H.I.V. in the U.S.A.</title>
+    <title>H.I.V. // U.S.A.</title>
     <link rel="stylesheet" type="text/css" href=styles.css>
     <script type="text/javascript" src="d3.js"></script>
     <script type="text/javascript" src="helpers.js"></script>
 </head>
 <body>
-  <h1 id="title">What does HIV look like in the USA?</h1>
+  <span id="title">what does HIV look like in the USA?</span>
+  <div id="smallSpace"></div>
   <div id="tooltip" class="hidden">
     <p><span id="value">100</span></p>
   </div>
@@ -54,7 +55,7 @@
           <p>All data courtesy of U.S. Department of Health & Human Services</p>
           <p>Source: <a href="https://healthdata.gov" target="_blank">HealthData.gov</a></p>
           <br>
-	<p>Visualized by <a href="https://jackadam.cc" target="_blank">Jack Adam</a></p>
+	        <p>Visualized by <a href="https://jackadam.cc" target="_blank">Jack Adam</a></p>
         </div>
 
       </div>
@@ -101,7 +102,7 @@
     }
 
     var formatAsThousands = d3.format(",");
-    
+
     var w = 850;
     var h = 600;
     var radius = Math.min(w, h) / 2;
@@ -142,7 +143,7 @@
       var threshold = document.getElementById("slider").value;
       document.getElementById('output').innerHTML = threshold;
       var tit = document.getElementById('title');
-      tit.innerHTML = "Age at HIV Diagnosis";
+      tit.innerHTML = "age at HIV diagnosis";
       tit.style.display = "block";
       document.getElementById('slide').style.display = "block";
       svg.selectAll("g").remove();
@@ -202,7 +203,7 @@
       var threshold = document.getElementById("slider").value;
       document.getElementById('output').innerHTML = threshold;
       var tit = document.getElementById('title');
-      tit.innerHTML = "Age of Persons Living with HIV";
+      tit.innerHTML = "age of persons living with HIV";
       tit.style.display = "block";
       document.getElementById('slide').style.display = "block";
       svg.selectAll("g").remove();
@@ -262,7 +263,7 @@
       var threshold = document.getElementById("slider").value;
       document.getElementById('output').innerHTML = threshold;
       var tit = document.getElementById('title');
-      tit.innerHTML = "Age at Death of Persons with HIV";
+      tit.innerHTML = "age at death of persons with HIV";
       tit.style.display = "block";
       document.getElementById('slide').style.display = "block";
       svg.selectAll("g").remove();
@@ -322,7 +323,7 @@
        var threshold = document.getElementById("slider").value;
        document.getElementById('output').innerHTML = threshold;
        var tit = document.getElementById('title');
-       tit.innerHTML = "Race of Persons Diagnosed with HIV";
+       tit.innerHTML = "race of persons diagnosed with HIV";
        tit.style.display = "block";
        document.getElementById('slide').style.display = "block";
 
@@ -498,7 +499,7 @@
        var threshold = document.getElementById("slider").value;
        document.getElementById('output').innerHTML = threshold;
        var tit = document.getElementById('title');
-       tit.innerHTML = "Race of Persons Living with HIV";
+       tit.innerHTML = "race of persons living with HIV";
        tit.style.display = "block";
        document.getElementById('slide').style.display = "block";
 
@@ -674,7 +675,7 @@
        var threshold = document.getElementById("slider").value;
        document.getElementById('output').innerHTML = threshold;
        var tit = document.getElementById('title');
-       tit.innerHTML = "Race of Persons Deceased";
+       tit.innerHTML = "race of persons deceased";
        tit.style.display = "block";
        document.getElementById('slide').style.display = "block";
 
@@ -848,7 +849,7 @@
         var threshold = document.getElementById("slider").value;
         document.getElementById('output').innerHTML = threshold;
         var tit = document.getElementById('title');
-        tit.innerHTML = "Transmission Type of Diagnosed Persons";
+        tit.innerHTML = "transmission type of diagnosed persons";
         tit.style.display = "block";
         document.getElementById('slide').style.display = "block";
         svg.selectAll("g").remove();
@@ -1080,7 +1081,7 @@
          var threshold = document.getElementById("slider").value;
          document.getElementById('output').innerHTML = threshold;
          var tit = document.getElementById('title');
-         tit.innerHTML = "Transmission Type of Living Persons";
+         tit.innerHTML = "transmission type of living persons";
          tit.style.display = "block";
          document.getElementById('slide').style.display = "block";
          svg.selectAll("g").remove();
@@ -1311,7 +1312,7 @@
           var threshold = document.getElementById("slider").value;
           document.getElementById('output').innerHTML = threshold;
           var tit = document.getElementById('title');
-          tit.innerHTML = "Transmission Type of Deceased Persons";
+          tit.innerHTML = "transmission type of deceased persons";
           tit.style.display = "block";
           document.getElementById('slide').style.display = "block";
           svg.selectAll("g").remove();
