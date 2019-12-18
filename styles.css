@@ -9,7 +9,7 @@ p { font-size: 12px; }
 .polyline { stroke: white; stroke-width: 0.75; fill: none; }
 .ring:hover, .hot:hover { stroke: white; }
 #title { color: white; }
-body { color: black; }
+body { background-color: black; }
 
 #tooltip {
   position: absolute;
