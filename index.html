@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jack Adam - HIV</title>
+    <link rel="stylesheet" type="text/css" href=styles.css>
+    <script type="text/javascript" src="d3.js"></script>
+    <script type="text/javascript" src="helpers.js"></script>
+</head>
+<body>
+    <span id="title">what does HIV look like in the USA?</span>
+    <div id="smallSpace"></div>
+
+    <div id="tooltip" class="hidden">
+        <p><span id="value">100</span></p>
+    </div>
+    <div class="gray" id="view">
+        <ul class="main-navigation">
+            <li><a href="#">Age</a>
+                <ul>
+                    <li><a onclick="make1(true);">Age at Diagnosis</a></li>
+                    <li><a onclick="make2(true);">Age of Living Persons</a></li>
+                    <li><a onclick="make3(true);">Age at Death</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Race</a>
+                <ul>
+                    <li><a onclick="make4(true);">Race of Diagnosed Persons</a></li>
+                    <li><a onclick="make5(true);">Race of Living Persons</a></li>
+                    <li><a onclick="make6(true);">Race of Deceased Persons</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Transmission</a>
+                <ul>
+                    <li><a onclick="make7(true);">Transmission Type of Diagnosed Persons</a></li>
+                    <li><a onclick="make8(true);">Transmission Type of Living Persons</a></li>
+                    <li><a onclick="make9(true);">Transmission Type of Deceased Persons</a></li>
+                </ul>
+        </ul>
+        <p id="output"></p>
+        <button id="animate" onclick="ani();">PLAY</button>
+        <div id="slide">
+            <p>
+                <input id="slider" oninput="make()" type="range" min="2011" max="2017" step="1" orient="horizontal">
+            </p>
+        </div>
+        <button id="myBtn">?</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>All data courtesy of U.S. Department of Health & Human Services</p>
+                <p>Source: <a href="https://healthdata.gov" target="_blank">HealthData.gov</a></p>
+                <br>
+                <p>Visualized by <a href="https://jackadam.cc" target="_blank">Jack Adam</a></p>
+            </div>
+            <div id="space"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="load.js"></script>
+</body>
+
+</html>
